@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+</head>
+
+<body>
+    <div id="fly-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <a href="" id="shopping-cart">
+                    <img src="https://img.favpng.com/18/20/18/shopping-cart-icon-png-favpng-Utz9iVbCrqgXQU24aE50bT4tM.jpg" alt="" height="50px" width="100px">
+                    <span>(0)</span>
+                </a>
+            </div>
+        </nav>
+        <div class="row mt20">
+            <div class="col-md-3 col-sm-6">
+                <span class="thumbnail">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/114110/iphone-8-plus-hh-600x600-600x600.jpg" alt="..." height="300px" width="300px">
+                    <h4>Product Title 1</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <hr class="line">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <p class="price">$29,90</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <button class="btn btn-info btn-add-cart right" > Add to cart</button>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <span class="thumbnail">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/114110/iphone-8-plus-hh-600x600-600x600.jpg" alt="..." height="300px" width="300px">
+                    <h4>Product Title 2</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <hr class="line">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <p class="price">$29,90</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <button class="btn btn-info btn-add-cart right" > Add to cart</button>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <span class="thumbnail">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-600x600.jpg" alt="..."height="300px" width="300px">
+                    <h4>Product Title 3</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <hr class="line">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <p class="price">$29,90</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <button class="btn btn-info btn-add-cart right" > Add to cart</button>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <span class="thumbnail">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-red-400x400.jpg" alt="..." height="300px" width="300px">
+                    <h4>Product Title 4</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <hr class="line">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <p class="price">$29,90</p>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <button class="btn btn-info btn-add-cart right" > Add to cart</button>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <img src="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-red-400x400.jpg" class="img-product-fly" alt="">
+
+</body>
+<script>
+</script>
+
+</html>
